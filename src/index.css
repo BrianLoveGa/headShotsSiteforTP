@@ -41,7 +41,7 @@ code {
 }
 
 #backgroundCheck, #cam1{
-  height: 300px;
+  max-height: 300px;
 }
 
 #lightInfo{
@@ -378,4 +378,7 @@ video {
     margin: 10px;
     font-size: .5em;
   }
+}
+
+@media (max-width: 399px) {
 }

@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
-import Home from './home';
+import Home from './Home';
 
 
-export default class Instructions extends Component {
+class Instructions extends Component {
 
     state = {
-        isActive: false,
+        isActive:false,
         btnTalk: "Read Instructions"
      }
    
@@ -31,14 +31,17 @@ export default class Instructions extends Component {
    
       render(){
           return(
-              <>
+              <div>
                   <div className="container-instr">
-                  <button className="all-btns info" onClick={this.handleShow}>{this.state.btnTalk}</button>
+                    
+                  <button id="hideBtn" onClick={this.handleShow}>{this.state.btnTalk}</button>
                   </div>
               {this.state.isActive ?      
               <div className="home-container">       
                  <Home /></div> : null }
-              </>
+              </div>
           )
       }
    }
+
+export default Instructions

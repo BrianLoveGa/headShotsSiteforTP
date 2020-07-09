@@ -14,10 +14,11 @@ function App() {
       <div id="backsplash-wrapper">
         <div id="backsplash">
           <div>
-            <img id="logo" src="/img/talentpath.png" alt="Talent Path Logo"/>
+            <img id="logo" src="/img/talentpath.png" alt="Talent Path Logo" />
             <h1 id="headshot-title">HEADSHOTS</h1>
           </div>
         </div>
+        <div id="arrow-down"></div>
       </div>
       <Instructions />
       <Switch>

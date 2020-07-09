@@ -242,6 +242,36 @@ video {
   margin-bottom: 40px;
 }
 
+#arrow-down{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#arrow-down::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: -300px;
+  left: 0;
+  border-right: 5px solid #2e67b2;
+  border-bottom: 5px solid #2e67b2;
+  transform: rotate(45deg);
+  animation: 1s arrow infinite ease;
+}
+
+@keyframes arrow {
+  0%, 100% {
+    top: 50px;
+  }
+  50% {
+    top: 60px;
+  }
+}
 /* fullscreen enable by props */
 .demo-image-preview-fullscreen > img {
   width: 100vw;
@@ -313,6 +343,13 @@ video {
   }
   .cameraDiv {
     margin-top: 5vh;
+  }
+  #arrow-down::after {
+    bottom: -150px;
+    width: 20px;
+    height: 20px;
+    border-right: 4px solid #2e67b2;
+    border-bottom: 4px solid #2e67b2;
   }
 }
 @media(max-width:700px){
